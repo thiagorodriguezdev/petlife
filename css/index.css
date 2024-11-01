@@ -39,7 +39,8 @@ button {
   --cor6: #ff725e;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 110%;
@@ -224,7 +225,7 @@ header .menu ul li a:hover {
   max-width: 95.4rem;
   color: var(--cor3);
   font-size: 1.8rem;
-  line-height: 150%; 
+  line-height: 150%;
   text-align: justify;
 }
 
@@ -235,9 +236,125 @@ header .menu ul li a:hover {
 .s-faq .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .s-faq .duvidas {
-  max-width: 59.1rem;
+  max-width: 60.1rem;
+}
+
+.s-faq .duvidas h2 {
+  color: var(--cor3);
+  padding-bottom: 3.2rem;
+}
+
+.s-faq .duvida {
+  padding-bottom: 1.6rem;
+  position: relative;
+}
+
+.s-faq .duvida img {
+  position: absolute;
+  top: 3rem;
+  right: 1.6rem;
+  cursor: pointer;
+}
+
+.s-faq .duvida h3 {
+  padding: 2.3rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #ff725e;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 110%;
+  cursor: pointer;
+}
+
+.s-faq .duvida p {
+  padding: 2.3rem;
+  text-align: justify;
+  color: var(--cor3);
+  font-size: 1.6rem;
+  line-height: 150%;
+  border-radius: 0rem 0rem 0.8rem 0.8rem;
+  border-right: 0.1rem solid #ff725e;
+  border-bottom: 0.1rem solid #ff725e;
+  border-left: 0.1rem solid #ff725e;
+  margin-top: -0.5rem;
+}
+
+footer {
+  margin-top: 12.8rem;
+  background-color: var(--cor2);
+}
+
+footer .container {
+  padding: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .left {
+  max-width: 34.8rem;
+}
+
+footer .left a {
+  color: var(--cor6);
+  font-size: 2.4rem;
+  font-weight: 900;
+  padding-bottom: 2.4rem;
+}
+
+footer .left p {
+  color: var(--cor4);
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+footer .right {
+  display: flex;
+  gap: 13rem;
+}
+
+footer .right .list p {
+  color: var(--cor3);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  padding-bottom: 2.4rem;
+}
+
+footer .right .list ul li a {
+  color: var(--cor4);
+  font-size: 1.6rem;
+  line-height: 150%;
+  padding-bottom: 1.6rem;
+  transition: opacity 0.3s ease;
+}
+
+footer .right .list ul li a:hover {
+  opacity: 0.7;
+}
+
+footer .rodape {
+  text-align: center;
+  padding-block: 29px;
+  background-color: var(--cor3);
+}
+
+footer .rodape p {
+  color: var(--cor5);
+  font-size: 1.6rem;
+  line-height: 150%; 
+}
+
+footer .rodape a {
+  color: var(--cor5);
+  transition: all .3s ease;
+}
+
+footer .rodape a:hover {
+  text-decoration: underline;
+  color: #ff725e;
 }
